@@ -1,8 +1,8 @@
 cask "jh" do
-  version "0.2.4"
-  sha256 "e422c9cfe49d36169924e01c46365ea3d1533f519ed269e8a59e290dc3220a05"
+  version "0.2.5"
+  sha256 "6ec1210f35cece525a313cdd7c737931f4857405c1df6cbda3e7d0042b9e4f3e"
 
-  url "https://github.com/Gvetri/atlassian-helper/releases/download/v#{version}/jh.dmg"
+  url "https://github.com/Gvetri/homebrew-tap/releases/download/v#{version}/jh.dmg"
   name "Jira Helper"
   desc "Atlassian multiplatform helper CLI and UI"
   homepage "https://github.com/Gvetri/atlassian-helper"
