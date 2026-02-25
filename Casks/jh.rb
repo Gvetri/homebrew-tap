@@ -1,6 +1,6 @@
 cask "jh" do
-  version "0.2.5"
-  sha256 "6ec1210f35cece525a313cdd7c737931f4857405c1df6cbda3e7d0042b9e4f3e"
+  version "0.2.6"
+  sha256 "0cc70e3ce8bf75514bfe9bac18340469b88664a8ba982a757bd5fee622a34004"
 
   url "https://github.com/Gvetri/homebrew-tap/releases/download/v#{version}/jh.dmg"
   name "Jira Helper"
@@ -9,6 +9,12 @@ cask "jh" do
 
   app "jh.app"
   binary "#{appdir}/jh.app/Contents/MacOS/jh"
+
+  caveats <<~EOS
+    macOS Gatekeeper may block this application from running because it is not signed.
+    To allow it to run, execute the following command in your terminal:
+      xattr -cr /Applications/jh.app
+  EOS
 
   zap trash: [
     "~/Library/Application Support/com.atlassian.helper",
