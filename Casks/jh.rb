@@ -1,6 +1,6 @@
 cask "jh" do
-  version "0.2.8"
-  sha256 "60d1e305f98f74f98f37fd0e327e37709ec5ed53afd9c622c987f9de51abc028"
+  version "0.2.9"
+  sha256 "46e60e07a3b1f9aca41355d760b609faf660c9bba244a6f877c03abf7de30934"
 
   url "https://github.com/Gvetri/homebrew-tap/releases/download/v#{version}/jh.dmg"
   name "Jira Helper"
